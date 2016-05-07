@@ -1,0 +1,848 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render partial: 'spree/shared/head' %>
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+  <%= render partial: 'spree/shared/google_analytics.js' %>
+<!--    start of my bdy  -->
+    <div class="container-fluid">
+<div class="top-mostbar">
+
+</div>
+<div class="top-bar">
+<!-- ----------------------------------- start of responsive menu -->
+
+<header class="dark">
+  <nav role="navigation">
+    <a href="javascript:void(0);" class="ic menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </a>
+    <a href="javascript:void(0);" class="ic close"></a>
+    <ul class="main-nav">
+
+
+      <!------------one navigation-->
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Bakery</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Bread and Rolls</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Bread</a></li>
+                <li><a>Rolls</a></li>
+                <li><a>Ethnic Breads</a></li>
+
+              </ul>
+
+              <h2 class="sub-menu-head">Cakes and Dessert</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Cakes</a></li>
+                <li><a>Fresh Desserts</a></li>
+                <li><a>Pies</a></li>
+
+              </ul>
+
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Patisserie</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Doughnuts, Muffins & Cookies</a></li>
+                <li><a>Scones and Buns</a></li>
+                <li><a>Chocolate</a></li>
+                <li><a>Pancakes</a></li>
+              </ul>
+
+              <h2 class="sub-menu-head">Birthday & Celebration Cakes</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Chocolate cakes</a></li>
+                <li><a>Cake Decorations</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Promotional Products</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Cakes</a></li>
+                <li><a>Doughnuts</a></li>
+                <li><a>Chocolate</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+      <!-- ---------- end of one navigation -->
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Fresh</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Milk & Cream</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Fresh Milk</a></li>
+                <li><a>Shelf Milk</a></li>
+                <li><a>Cream</a></li>
+
+              </ul>
+
+              <h2 class="sub-menu-head">Cheese, Butter & Eggs</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Eggs</a></li>
+                <li><a>Butter & Spreads</a></li>
+                <li><a>Cheese</a></li>
+              </ul>
+
+              <h2 class="sub-menu-head">Yoghurts & Milk drinks</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Yoghurt</a></li>
+                <li><a>Yoghurt drinks</a></li>
+                <li><a>Milkshakes</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Fruits & Vegetabless</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Fruit</a></li>
+                <li><a>Prepared Fruit</a></li>
+                <li><a>Vegetables</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Salads & Herbs</h2>
+              <ul class="sub-menu-lists">
+                <li><a>Prepared Vegetables & Salads</a></li>
+                <li><a>Fresh Herbs</a></li>
+
+              </ul>
+
+              <h2 class="sub-menu-head">Dried Vegetables</h2>
+              <h2 class="sub-menu-head">Chilled Desserts</h2>
+
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Frozen</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Ready Meals</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Breakfast</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Drinks</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Baby</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Household</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Home&Entertainment</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+      <li class="top-level-link">
+        <a class="mega-menu"><span>Health&Beauty</span></a>
+        <div class="sub-menu-block">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Company</h2>
+              <ul class="sub-menu-lists">
+                <li><a>About</a></li>
+                <li><a>Mission</a></li>
+                <li><a>Community</a></li>
+                <li><a>Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Media</h2>
+              <ul class="sub-menu-lists">
+                <li><a>News</a></li>
+                <li><a>Events</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+              <h2 class="sub-menu-head">Careers</h2>
+              <ul class="sub-menu-lists">
+                <li><a>New Opportunities</a></li>
+                <li><a>Life @ Company</a></li>
+                <li><a>Why Join Us?</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row banners-area">
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+              <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+
+    </ul>
+  </nav>
+
+</header>
+
+	<!-- ----------------------------------- end of megamenu -->
+</div>
+
+<div class="katale-body">
+<div class="row">
+<div class="col-md-2 hidden-xs hidden-sm">
+	<div class="sidebar">
+
+
+
+
+		<!-- ---------form checkbox starts here -->
+		<form action="#">
+		<h4>Filter By</h4>
+
+		<h5>Supermarket</h5>
+  <p>
+    <input type="checkbox" id="test1" />
+    <label for="test1">Uchumi</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test2" />
+    <label for="test2">Nakumatt</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test3" />
+    <label for="test3">Shoprite</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test4" />
+    <label for="test4">Mega Standard</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test5" />
+    <label for="test5">Tusky's</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test6" />
+    <label for="test6">Kenjoy</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test7" />
+    <label for="test7">Capital Shoppers</label>
+  </p>
+
+
+  <h5>Department</h5>
+  <p>
+    <input type="checkbox" id="test8" />
+    <label for="test8">Bakery</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test9" />
+    <label for="test9">Fresh</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test10" />
+    <label for="test10">Frozen</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test11" />
+    <label for="test11">Drinks</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test12" />
+    <label for="test12">Baby</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test13" />
+    <label for="test13">Home</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test14" />
+    <label for="test14">Health and Beauty</label>
+  </p>
+
+
+  <h5>Brand</h5>
+  <p>
+    <input type="checkbox" id="test15" />
+    <label for="test15">Cardburry</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test16" />
+    <label for="test16">Fresh Diary</label>
+  </p>
+
+  <h5>Lifestyle</h5>
+  <p>
+    <input type="checkbox" id="test17" />
+    <label for="test17">Alcohol-Free</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test18" />
+    <label for="test18">Dietry</label>
+  </p>
+
+
+  <h5>Health</h5>
+  <p>
+    <input type="checkbox" id="test19" />
+    <label for="test19">Fat Free</label>
+  </p>
+
+   <p>
+    <input type="checkbox" id="test20" />
+    <label for="test20">Sugar Free</label>
+  </p>
+
+
+</form>
+
+		<!-- --------- form checkbox stops here -->
+	</div>
+</div>
+<div class="col-md-8">
+	<div class="product-page">
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/tomato.png" width = "100%" height ="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/cabbage.png" width = "100%" height="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/green-pepper.png" width = "100%" height="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+		</div>
+	</div>
+
+	<!-- -----------space here -->
+	<div class="shop-space"></div>
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/fish.png" width = "100%" height ="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/eggs.png" width = "100%" height ="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/bread.png" width = "100%" height ="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+		</div>
+	</div>
+	<!-- -------------- ends here -->
+
+	<!-- -----------space here -->
+	<div class="shop-space"></div>
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/salt.png" width = "100%" height ="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/vodka.png" width = "100%" height="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/sunlight.png" width = "100%"  height="100%">
+			</div>
+				<div class="product-description">
+				This is some text inside of a div block. Prodcut description goes here
+				</div>
+				<div class="price">
+					PRICE: 5k
+				</div>
+				<div class="basket">
+					<a href="#" class="w-button rsvp-button">Add To Basket</a>
+				</div>
+		</div>
+	</div>
+	<!-- -------------- ends here -->
+
+	</div>
+</div>
+<div class="col-md-2 hidden-sm hidden-xs">
+	<div class="sidebar">
+		<h3>Pay on Delivery</h3>
+	</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="footer-first">
+
+
+</div>
+
+<div class="footer-last"></div>
+</div>
+<!--      end of my bdoy-->
+
+
+    <%= render partial: 'spree/shared/header' %>
+
+    <div class="container">
+      <div class="row" data-hook>
+        <%= breadcrumbs(@taxon) %>
+
+        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+
+        <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
+
+        <%= yield :templates %>
+      </div>
+    </div>
+    <div class="header">hello</div>
+  </body>
+</html>
