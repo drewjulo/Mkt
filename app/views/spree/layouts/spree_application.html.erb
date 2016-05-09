@@ -12,7 +12,8 @@
 <!--    start of my bdy  -->
     <div class="container-fluid">
 <div class="top-mostbar">
-<%= link_to Spree.t(:cart), '/cart' %> 
+
+  <%= render partial: 'spree/shared/header' %>
 </div>
 <div class="top-bar">
 <!-- ----------------------------------- start of responsive menu -->
@@ -522,11 +523,20 @@
 <div class="col-md-2 hidden-xs hidden-sm">
 	<div class="sidebar">
 
+ <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
+    <div class="space"></div>
+    <style>
+      .space{
+        margin-bottom:700px;
+        position:relative;
+        z-index:10;
+      }
+    </style>
 
 
 		<!-- ---------form checkbox starts here -->
-		<form action="#">
+<!-- 		<form action="#">
 		<h4>Filter By</h4>
 
 		<h5>Supermarket</h5>
@@ -632,7 +642,7 @@
   </p>
 
 
-</form>
+</form> -->
 
 		<!-- --------- form checkbox stops here -->
 	</div>
@@ -642,58 +652,7 @@
 
     <%= yield %>
 
-	<div class="col-md-4">
-		<div class="product">
-			<div class="product-image">
-				<img src="images/tomato.png" width = "100%" height ="100%">
-			</div>
-				<div class="product-description">
-				This is some text inside of a div block. Prodcut description goes here
-				</div>
-				<div class="price">
-					PRICE: 5k
-				</div>
-				<div class="basket">
-					<a href="#" class="w-button rsvp-button">Add To Basket</a>
-				</div>
-
-		</div>
-	</div>
-
-	<div class="col-md-4">
-		<div class="product">
-			<div class="product-image">
-				<img src="images/cabbage.png" width = "100%" height="100%">
-			</div>
-				<div class="product-description">
-				This is some text inside of a div block. Prodcut description goes here
-				</div>
-				<div class="price">
-					PRICE: 5k
-				</div>
-				<div class="basket">
-					<a href="#" class="w-button rsvp-button">Add To Basket</a>
-				</div>
-
-		</div>
-	</div>
-
-	<div class="col-md-4">
-		<div class="product">
-			<div class="product-image">
-				<img src="images/green-pepper.png" width = "100%" height="100%">
-			</div>
-				<div class="product-description">
-				This is some text inside of a div block. Prodcut description goes here
-				</div>
-				<div class="price">
-					PRICE: 5k
-				</div>
-				<div class="basket">
-					<a href="#" class="w-button rsvp-button">Add To Basket</a>
-				</div>
-		</div>
-	</div>
+	
 
 
 
@@ -721,13 +680,13 @@
 <!--      end of my bdoy-->
 
 
-    <%= render partial: 'spree/shared/header' %>
+     <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
 
     <div class="container">
       <div class="row" data-hook>
         <%= breadcrumbs(@taxon) %>
 
-        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>

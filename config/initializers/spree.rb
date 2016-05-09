@@ -10,7 +10,8 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-  Spree::Auth::Config[:confirmable] = true
+  Spree::Auth::Config[:confirmable] = false
+  config.logo = 'http://res.cloudinary.com/african-centre-for-peace-and-human-life/image/upload/c_scale,h_27/v1462790330/Screenshot_3_qj29z5.png'
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
