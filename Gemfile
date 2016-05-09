@@ -3,8 +3,12 @@ source 'https://rubygems.org'
 group :development do
   gem 'sqlite3', '1.3.11'
 end
+
+group :test do
+  gem 'sqlite3', '1.3.11'
+end
 group :production do
-  gem 'pg', '~> 0.18.4'
+gem 'pg', '~> 0.18.4'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
